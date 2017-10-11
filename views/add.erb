@@ -1,0 +1,19 @@
+<form action="/" method="POST">
+  <label for="firstName">First Name:</label>
+  <input type="text" name="first_name" id="firstName" />
+  <br>
+  <label for="lastName">Last Name:</label>
+  <input type="text" name="last_name" id="lastName" />
+  <br>
+  <label for="house_select">House:</label>
+  <select name="house" id="house_select">
+    <% House.find_all.each do |house_hash| %>
+      <%= "<option value='#{house_hash.id}'>#{house_hash.name}</option>" %>
+    <% end %>
+  </select>
+  <br>
+  <label for="age">Age:</label>
+  <input type="number" name="age" id="age" />
+  <br>
+  <input type="submit" value="Add">
+</form>

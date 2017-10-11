@@ -1,0 +1,14 @@
+<div class="center">
+  <% @students.each do |student| %>
+    <p>
+      <%= "<img src='#{House.find(student.house).logo}' class='house_badge' />" %>
+      <%= student.to_s %>
+      <%= "<a href='/update/#{student.id}'>" %>
+      <%= "<img src='/edit.png' class='modify_icon' />" %>
+      <%= '</a>' %>
+      <%= "<a href='/delete/#{student.id}'>" %>
+      <%= "<img src='/delete.png' class='modify_icon' />" %>
+      <%= '</a>' %>
+    </p>
+  <% end %>
+</div>

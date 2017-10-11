@@ -1,0 +1,71 @@
+body {
+  background-color: #EEF0EB;
+  margin: 0;
+  font-family: 'Molengo', sans-serif;
+  height: 100%;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 30%;
+}
+
+ul {
+  background-color: #153243;
+  list-style-type: none;
+  margin: 0 0 20px 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+li {
+  float: left;
+}
+
+ul li a:hover {
+  background-color: #284B63;
+}
+
+a {
+  color: #284B63;
+  font-family: 'Molengo', sans-serif;
+  text-decoration: none;
+}
+
+ul li a {
+  display: block;
+  color: #EEF0EB;
+  font-family: 'Lekton', sans-serif;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+ul li img {
+  display: block;
+  padding: 10px;
+  align-self: center;
+}
+
+input {
+  background-color: #B4B8AB;
+  font-family: 'Lekton', sans-serif;
+}
+
+.house_badge {
+  width: 30px;
+}
+
+.modify_icon {
+  width: 20px;
+}

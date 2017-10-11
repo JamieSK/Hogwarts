@@ -1,0 +1,8 @@
+<div class="center">
+  <p>You deleted a record.</p>
+  <div>
+    <% House.find_all.each do |house_hash| %>
+      <%= "<img src='#{house_hash.logo}' class='house_badge' />" %>
+    <% end %>
+  </div>
+</div>
